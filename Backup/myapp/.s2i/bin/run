@@ -1,0 +1,6 @@
+#!/bin/bash
+echo "======VDK run======"
+cd /opt/app-root/src/build/
+node server.js
+echo "======VDK run======.."
+

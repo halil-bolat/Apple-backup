@@ -1,0 +1,49 @@
+@import '~#/theme/base.scss';
+
+.logoTitle {
+  font-size: 25px;
+  line-height: 25px;
+  margin: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: inline-block;
+  height: 25px;
+  flex-grow: 1;
+}
+
+.logo {
+  width: 50px;
+}
+
+.logoLink {
+  height: 50px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.appBar {
+  z-index: 10;
+  background-color: $rgb-60;
+  height: 80px;
+  display: flex;
+  align-content: center;
+  justify-content: left;
+  padding-right: 30px;
+  padding-left: 30px;
+  box-shadow: 0 0 12px 3px $black;
+
+  @include responsive(medium-screens) {
+    height: 60px;
+    min-height: 72px;
+  }
+}
+
+.userControl {
+  position: absolute;
+  right: 40px;
+
+  @include responsive(medium-screens) {
+    right: 96px;
+    top: 26px;
+  }
+}

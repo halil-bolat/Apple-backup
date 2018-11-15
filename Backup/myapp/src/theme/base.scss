@@ -1,0 +1,28 @@
+/* stylelint-disable property-no-unknown */
+
+@import './variables/colors.scss';
+@import './variables/breakpoints.scss';
+@import './mixins/responsive.scss';
+
+$topbar-height: 80px;
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  color: $dark;
+  font: 400 15px/22px 'Open Sans', 'Helvetica Neue', Sans-serif;
+  font-weight: normal;
+  font-smoothing: antialiased;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: $main-text-color;
+}

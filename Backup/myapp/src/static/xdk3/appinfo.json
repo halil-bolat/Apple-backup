@@ -1,0 +1,11 @@
+{
+  "vendor": "Accedo",
+  "largeIcon": "logo.png",
+  "icon": "logo.png",
+  "main": "index.html",
+  "id": "tv.accedo.build.viki",
+  "title": "BUILDWEB-VIKI",
+  "type": "web",
+  "version": "0.0.1",
+  "disableBackHistoryAPI": true
+}

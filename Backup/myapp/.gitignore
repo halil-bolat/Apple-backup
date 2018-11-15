@@ -1,0 +1,11 @@
+node_modules
+build
+coverage
+.idea
+dist
+npm-debug.log
+.DS_Store
+.vscode
+webpack/dll
+ignored_dir
+storybook-static

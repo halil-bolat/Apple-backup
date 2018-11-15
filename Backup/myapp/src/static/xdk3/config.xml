@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Tizen 2015/2016 compatible config.xml -->
+
+<widget
+    xmlns="http://www.w3.org/ns/widgets"
+    xmlns:tizen="http://tizen.org/ns/widgets"
+    id="http://xdk.accedo.tv/dva"
+    version="1.0.0"
+    viewmodes="maximized">
+
+    <access
+        origin="*"
+        subdomains="true"/>
+
+    <tizen:application
+        id="uDvuR4G7yt.dva"
+        package="uDvuR4G7yt"
+        required_version="2.3"/>
+
+    <content src="index.html"/>
+
+    <feature name="http://tizen.org/feature/screen.size.all"/>
+
+    <icon src="icon.png"/>
+
+    <!--
+        This metadata, together with tizen:application required_version
+        set in 2.3, allowing the app to work on 2015 an 2016 TV
+    -->
+    <tizen:metadata
+        key="http://samsung.com/tv/metadata/devel.api.version"
+        value="2.4"/>
+
+    <tizen:metadata
+        key="http://samsung.com/tv/metadata/use.accelerator"
+        value="endpoint_URL=https://demo3039520.mockable.io/tizen-deeplinking-test"/>
+
+    <name>dva</name>
+
+    <tizen:privilege name="http://tizen.org/privilege/tv.inputdevice"/>
+    <tizen:privilege name="http://tizen.org/privilege/tv.audio"/>
+    <tizen:privilege name="http://tizen.org/privilege/tv.display"/>
+    <tizen:privilege name="http://tizen.org/privilege/internet"/>
+
+    <tizen:privilege name="http://developer.samsung.com/privilege/avplay"/>
+    <tizen:privilege name="http://developer.samsung.com/privilege/drmplay"/>
+    <tizen:privilege name="http://developer.samsung.com/privilege/drminfo"/>
+
+    <tizen:privilege name="http://developer.samsung.com/privilege/network.public"/>
+    <tizen:privilege name="http://developer.samsung.com/privilege/productinfo"/>
+
+    <tizen:profile name="tv"/>
+</widget>

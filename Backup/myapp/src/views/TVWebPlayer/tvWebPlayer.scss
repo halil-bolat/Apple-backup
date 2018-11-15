@@ -1,0 +1,73 @@
+@import '~vdkweb-player/lib/components/Player/index.scss';
+
+$player-section-width: 100%;
+$player-section-max-width: 1200px;
+$player-section-height: 100%;
+$player-section-max-height: 1000px;
+
+.playerSection {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(240, 240, 240, 0.3);
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.playerContainer {
+  position: relative;
+  width: $player-section-width;
+  max-width: $player-section-max-width;
+  height: $player-section-height;
+  max-height: $player-section-max-height;
+}
+
+/* stylelint-disable selector-class-pattern */
+:global(.playstation-webmaf),
+:global(.android-webview) {
+  .playerContainer {
+    top: 620px;
+  }
+
+  .playerSection {
+    background-color: transparent;
+  }
+}
+/* stylelint-enable selector-class-pattern */
+
+.playerControls {
+  display: flex;
+  padding: 10px;
+  width: $player-section-width;
+  max-width: $player-section-max-width;
+  height: 82px;
+  position: absolute;
+  bottom: 0;
+
+  .rwBtn,
+  .ffBtn,
+  .playPauseBtn {
+    padding: 10px;
+  }
+
+  .seekBar {
+    width: 100%;
+  }
+}
+
+.video,
+.video video {
+  height: $player-section-height;
+  max-height: $player-section-max-height;
+  width: $player-section-width;
+  max-width: $player-section-max-width;
+}
+
+.error {
+  color: red;
+}
+
+/* stylelint-disable selector-class-pattern */
+:global(.video-js) :global(.vjs-tech) {
+  position: absolute !important;
+}
+/* stylelint-enable selector-class-pattern */

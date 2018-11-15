@@ -1,0 +1,8 @@
+{
+  extends: 'vdkweb-stylelint-preset',
+  rules: {
+    "selector-pseudo-element-no-unknown": [true, {
+      ignorePseudoElements: ["/global/"]
+    }]
+  }
+}

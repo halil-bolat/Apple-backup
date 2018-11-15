@@ -1,0 +1,31 @@
+@import '~#/theme/base.scss';
+
+.viewport {
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.pageContent,
+.pageTitle {
+  padding: 20px;
+  padding-left: 40px;
+}
+
+.pageTitle {
+  background-color: rgba(127, 255, 212, 0.5);
+  color: rgb(10, 10, 10);
+}

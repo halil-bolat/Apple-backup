@@ -1,0 +1,10 @@
+#!/bin/bash
+echo "======VDK assemble======"
+rsync -a /tmp/src/ /opt/app-root/src/
+rm -rf /tmp/src/
+
+cd /opt/app-root/src/
+npm install
+npm run build
+echo "======VDK assemble======"
+
